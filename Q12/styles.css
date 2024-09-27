@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 18px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;  
+}
+nav .cont {
+    margin: 0 30px;
+}
+nav .logo {
+    margin-right: auto;
+}
+span {
+    margin-left: 6px;
+}
+nav .btn {
+    background-color: #b1e50e;
+    padding: 15px 26px;
+    border-radius: 6px;
+}
+
+
+/* animated bg */
+.hero {
+    position: relative;
+}
+.box-container {
+    display: grid;
+    border-radius: 25px;
+    overflow: hidden;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background: linear-gradient(
+      180deg,
+      rgba(225, 233, 254, 0.8),
+      rgba(225, 233, 254, 0)
+    );
+}
+.box {
+  height: 75px;
+  width: 75px;
+  border: 1px solid rgb(219, 223, 234);
+  transition: background-color 1s ease-in-out, color 2s ease-in-out;
+  
+}
+
+.box:hover {
+  background-color: #d8d8d8d7;
+  transition: background-color 0.09s ease-in, color 0.1s ease-in;
+}
+
+
+/* Main content */
+main {
+    padding: 6% 20% 0 10%;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+}
+main .logo {
+    margin-bottom: 4em;
+}
+main h1 {
+    font-size: 5em;
+}
+main .diff {
+    color: #6a90fb;
+    margin: 1em 0;
+}
+main .text {
+    font-size: 2em;
+    color: #494953;
+    font-weight: 600;
+    margin-top: 70px;
+    line-height: 45px;
+}
+main button {
+    color: white;
+    background-color: #121318;
+    padding: 18px 55px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+
+section {
+    padding: 12% 10% 0;
+}
+
+.poster-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6em;
+    margin-bottom: 14%;
+}
+
+.poster-1 h2, p {
+    color: #494d57;
+    line-height: 1.6em;
+}
+
+.poster-1 h2 {
+    margin-bottom: 1.6em;
+}
+
+.poster-1 p {
+    font-size: 1.1em;
+}
+
+
+
+.poster-2 {
+    margin-bottom: 12%;
+}
+
+.poster-2 h1 {
+    line-height: 4em;
+    font-size: 3em;
+    color: #494d57;
+}
+
+.poster-2 .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+.poster-2 .cont div {
+    width: 16%;
+}
+
+.poster-2 .cont div p {
+    color: #494d57;
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
+
+
+.card-1 {
+    background: linear-gradient(180deg,rgba(225,233,254,0),rgba(225,233,254,.8) 52.08%,rgba(225,233,254,0));
+    padding: 0 10%;
+}
+
+.card-1 h1 {
+    color: #494d57;
+    font-size: 3em;
+    line-height: 5em;
+}
+
+.card-1 .cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.card-1 .box {
+    padding: 2em;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    border: none;
+}
+
+.card-1 img {
+    margin-bottom: 4em;
+}
+
+.card-1 h2 {
+    line-height: 3em;
+}
+
+.card-1 p {
+    color: #a4a5ab;
+    font-size: 1.2em;
+}
+
+
+
+.team {
+    margin-bottom: 12em;
+}
+
+.team h1 {
+    font-size: 3em;
+    line-height: 4em;
+}
+
+.team .cont {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.team .cont div {
+    padding: 1em;
+}
+
+.team img {
+    width: 14em;
+    border-radius: 1.4em;
+}
+
+.team h2{
+    line-height: 3em;
+}
+
+.team #post {
+    margin-bottom: 1.1em;
+    color: #494b57;
+}
+
+
+
+.testimonials {
+    margin-bottom: 12em;
+}
+
+.testimonials h1 {
+    font-size: 3em;
+    line-height: 4em;
+}
+
+.testimonials .cont {
+    display: flex;
+    align-items: center;
+    gap: 2.2em;
+}
+
+.testimonials .boxed {
+    width: 100%;
+}
+
+.testimonials p {
+    font-weight: 600;
+    margin-top: 2.6em;
+    font-size: 1.1em;
+}
+
+.testimonials .boxed div {
+    margin-top: 6em;
+    font-size: 1.1em;
+}
